@@ -44,13 +44,7 @@
         <div class="donetab tab"></div>
     </li>
     
-    <li class="colorGreen">
-        <span>Milk</span>
-        <div class="draggertab tab"></div>
-        <div class="colortab tab"></div>
-        <div class="deletetab tab"></div>
-        <div class="donetab tab"></div>
-    </li>
+    
 </ul>
 
 <!-- IF LOGGED OUT -->
