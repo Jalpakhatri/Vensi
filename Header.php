@@ -29,7 +29,7 @@
                 <p><a href="/logout.php" class="button">Log out</a> <a href="/account.php" class="button">Your Account</a></p>
 				<ul id="list">
    <li class="colorRed">
-        <span>Walk the dog</span>
+        <span>Walk the dog.......</span>
         <div class="draggertab tab"></div>
         <div class="colortab tab"></div>
         <div class="deletetab tab"></div>
