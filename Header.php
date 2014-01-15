@@ -27,6 +27,31 @@
 
 <!-- IF LOGGED IN -->
                 <p><a href="/logout.php" class="button">Log out</a> <a href="/account.php" class="button">Your Account</a></p>
+				<ul id="list">
+   <li class="colorRed">
+        <span>Walk the dog</span>
+        <div class="draggertab tab"></div>
+        <div class="colortab tab"></div>
+        <div class="deletetab tab"></div>
+        <div class="donetab tab"></div>
+    </li>
+    
+    <li class="colorBlue">
+        <span>Pick up dry cleaning</span>
+        <div class="draggertab tab"></div>
+        <div class="colortab tab"></div>
+        <div class="deletetab tab"></div>
+        <div class="donetab tab"></div>
+    </li>
+    
+    <li class="colorGreen">
+        <span>Milk</span>
+        <div class="draggertab tab"></div>
+        <div class="colortab tab"></div>
+        <div class="deletetab tab"></div>
+        <div class="donetab tab"></div>
+    </li>
+</ul>
 
 <!-- IF LOGGED OUT -->
                 <p><a class="button" href="/signup.php">Sign up</a> &nbsp; <a class="button" href="/login.php">Log in</a></p>

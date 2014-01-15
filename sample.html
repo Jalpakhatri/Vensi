@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html">
+   <title>Github API Webapp using AngularJS - Not So Clever Demo</title>
+  <!--<link rel="stylesheet" type="text/css" media="all" href="css/styles.css">-->
+</head>
+ 
+<body ng-controller="GitHubCtrl">
+ 
+<script>
+   function GitHubCtrl($scope, $http) {
+   }
+   function GitHubCtrl($scope, $http) {
+   $scope.getGitInfo = function () {
+   }
+}
+</script>
+
+<p> Demo </p>
+<div>
+    <h1>Simple Github API Webapp</h1>
+    <p>Enter a single Github username below and click the button to display profile info.</p>
+ 
+    <input type="text" id="ghusername" ng-model="username" placeholder="Github username...">
+    <a href="#" id="ghsubmitbtn" ng-click="getGitInfo()">Pull User Data</a>
+    <div id="ghapidata" class="clearfix"></div>
+</div>
+<script> scope.getGitInfo = function () {
+   $scope.userNotFound = false;
+   $scope.loaded = false;
+ 
+   $http.get("https://api.github.com/users/" + $scope.username)
+      .success(function (data) {
+         $scope.user = data;
+         $scope.loaded = true;
+      })
+      .error(function () {
+         $scope.userNotFound = true;
+      })
+} </script>
+ 
+</body>
+</html>
